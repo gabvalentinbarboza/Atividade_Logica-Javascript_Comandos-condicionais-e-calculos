@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_23</title>
+</head>
+<body>
+    <script>
+let contadorEntre0e100 = 0;
+let contadorEntre101e200 = 0;
+let contadorMaiores200 = 0;
+
+for (let i = 1; i <= 20; i++) {
+    let numero = parseFloat(prompt("Digite o " + i + "º número:"));
+    if (numero >= 0 && numero <= 100) {
+        contadorEntre0e100++;
+    } else if (numero >= 101 && numero <= 200) {
+        contadorEntre101e200++;
+    } else {
+        contadorMaiores200++;
+    }
+}
+
+alert("Números entre 0 e 100: " + contadorEntre0e100 +
+      "\nNúmeros entre 101 e 200: " + contadorEntre101e200 +
+      "\nNúmeros maiores que 200: " + contadorMaiores200);
+
+    </script>
+</body>
+</html>

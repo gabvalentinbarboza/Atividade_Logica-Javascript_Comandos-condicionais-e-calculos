@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_1</title>
+</head>
+<body>
+    <script>
+let prato = parseInt(prompt("Escolha o prato:\n1 - Vegetariano\n2 - Peixe\n3 - Frango\n4 - Carne"));
+let sobremesa = parseInt(prompt("Escolha a sobremesa:\n1 - Abacaxi\n2 - Sorvete diet\n3 - Mousse diet\n4 - Mousse chocolate"));
+let bebida = parseInt(prompt("Escolha a bebida:\n1 - Chá\n2 - Suco de laranja\n3 - Suco de melão\n4 - Refrigerante diet"));
+
+let caloriasPrato, caloriasSobremesa, caloriasBebida;
+
+switch (prato) {
+    case 1:
+        caloriasPrato = 180;
+        break;
+    case 2:
+        caloriasPrato = 230;
+        break;
+    case 3:
+        caloriasPrato = 250;
+        break;
+    case 4:
+        caloriasPrato = 350;
+        break;
+    default:
+        alert("Opção inválida para o prato.");
+}
+
+switch (sobremesa) {
+    case 1:
+        caloriasSobremesa = 75;
+        break;
+    case 2:
+        caloriasSobremesa = 110;
+        break;
+    case 3:
+        caloriasSobremesa = 170;
+        break;
+    case 4:
+        caloriasSobremesa = 200;
+        break;
+    default:
+        alert("Opção inválida para a sobremesa.");
+}
+
+switch (bebida) {
+    case 1:
+        caloriasBebida = 5;
+        break;
+    case 2:
+        caloriasBebida = 80;
+        break;
+    case 3:
+        caloriasBebida = 90;
+        break;
+    case 4:
+        caloriasBebida = 35;
+        break;
+    default:
+        alert("Opção inválida para a bebida.");
+}
+
+let totalCalorias = caloriasPrato + caloriasSobremesa + caloriasBebida;
+alert("Total de calorias da refeição: " + totalCalorias);
+
+    </script>
+</body>
+</html>

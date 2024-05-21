@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_18</title>
+</head>
+<body>
+    <script>
+let nomeMaisNovo;
+let idadeMaisNova = Infinity;
+
+for (let i = 1; i <= 10; i++) {
+    let nome = prompt("Digite o nome da pessoa " + i + ":");
+    let idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+
+    if (idade < idadeMaisNova) {
+        nomeMaisNovo = nome;
+        idadeMaisNova = idade;
+    }
+}
+
+alert("A pessoa mais nova é: " + nomeMaisNovo + ", com " + idadeMaisNova + " anos.");
+
+    </script>
+</body>
+</html>
